@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 // --- // Scroll to top // --- //
 
 // Hide and show S2T button 
