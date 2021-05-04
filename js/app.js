@@ -1,5 +1,15 @@
 import $ from "jquery";
 
+// --- // Header buttons smooth scroll // --- //
+
+$(".header-buttons").on('click', 'a[href^="#"]', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
+
 // --- // Scroll to top // --- //
 
 // Hide and show S2T button 
