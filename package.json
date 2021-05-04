@@ -13,9 +13,10 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "rimraf ./dist && parcel build index.html"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "rimraf": "^3.0.2"
   }
 }
