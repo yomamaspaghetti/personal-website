@@ -1,70 +1,97 @@
 html {
-    font-size: 1em;
-    box-sizing: border-box;
+	font-size: 1em;
+	box-sizing: border-box;
 }
 
-*,*::before,*::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
-    font-family: $font;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1;
-    background-color: $bg-color;
-    color: $primary-color;
+	font-family: $font;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+	background-color: $bg-color;
+	color: $primary-color;
 }
 
-h1,h2,h3,h4,h5,h6,p,input,a,span,textarea {
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+a,
+span,
+textarea {
+	font-weight: 300;
 }
 
 h1 {
-    font-size: em(32);
+	font-size: em(32);
 }
 
 h2 {
-    font-size: em(24);
+	font-size: em(24);
 }
 
 h3 {
-    font-size: em(20);
-    font-weight: 500;
+	font-size: em(20);
+	font-weight: 500;
 }
 
 h4 {
-    font-size: em(14);
-    font-weight: 500;
+	font-size: em(14);
+	font-weight: 500;
 }
 
 img {
-    image-rendering: optimizeQuality;
+	image-rendering: optimizeQuality;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 
-    &:hover,
-    &:focus {
-        outline: none;
-    }
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+	&.link {
+		color: $primary-color;
+		font-weight: 400;
+		text-decoration: underline dotted;
+		white-space: nowrap;
+		transition: all 150ms ease-in-out;
+
+		&:hover,
+		&:focus {
+			color: $secondary-color;
+		}
+	}
 }
 
-input, textarea, button {
-    background: none;
-    border: none;
-    font-family: inherit;
+input,
+textarea,
+button {
+	background: none;
+	border: none;
+	font-family: inherit;
 }
 
 textarea {
-    resize: none;
+	resize: none;
 }
 
 b {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 .container {
-    width: 80%;
+	width: 80%;
 }
