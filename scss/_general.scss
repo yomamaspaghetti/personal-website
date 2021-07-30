@@ -66,7 +66,6 @@ a {
 		color: $primary-color;
 		font-weight: 400;
 		text-decoration: underline dotted;
-		white-space: nowrap;
 		transition: all 150ms ease-in-out;
 
 		&:hover,
@@ -94,4 +93,5 @@ b {
 
 .container {
 	width: 80%;
+	max-width: em(1440);
 }

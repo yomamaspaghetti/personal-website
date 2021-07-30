@@ -50,7 +50,7 @@ main {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: em(160) 0;
+	padding: 25vh 0;
 }
 
 .portfolio-header {
@@ -93,6 +93,11 @@ main {
 	}
 }
 
+.project-img {
+	display: flex;
+	align-items: center;
+}
+
 .project-img,
 .project-content {
 	padding: 0 em(48);
@@ -105,6 +110,7 @@ main {
 
 	h3 {
 		margin-bottom: em(16, 20);
+		line-height: 1.5;
 	}
 
 	h4 {
@@ -129,7 +135,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 30vh 0;
+	padding: 25vh 0;
 }
 
 .about-header {
@@ -197,7 +203,12 @@ main {
 
 // --- // Footer // --- //
 
-footer p {
+.copyright {
 	text-align: center;
-	padding: em(32) 0;
+	padding: em(32);
+
+	p {
+		display: inline-block;
+		white-space: nowrap;
+	}
 }
